@@ -1,0 +1,34 @@
+<form novalidate>
+  <mat-card class="demo">
+    <mat-card-header>
+      <mat-card-title>Date picker demos</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field appearance="fill">
+            <mat-label>standard datepicker</mat-label>
+            <input matInput [matDatepicker]="picker" [(ngModel)]="date" />
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="picker"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          Selected standard date: {{date?.toLocaleDateString()}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <app-monthpicker [(monthAndYear)]="monthAndYear"></app-monthpicker>
+        </div>
+        <div class="col">
+          Selected month and year: {{monthAndYear?.toLocaleDateString()}}
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</form>

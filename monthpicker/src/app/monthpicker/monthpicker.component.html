@@ -1,0 +1,10 @@
+<mat-form-field appearance="fill">
+  <mat-label>monthpicker</mat-label>
+  <input matInput [(ngModel)]="monthAndYear" [matDatepicker]="picker" (dateChange)="emitDateChange($event)" />
+  <mat-hint>MM/YYYY</mat-hint>
+  <mat-datepicker-toggle
+    matSuffix
+    [for]="picker"
+  ></mat-datepicker-toggle>
+  <mat-datepicker #picker [startView]="'month'" (monthSelected)="picker.close()"></mat-datepicker>
+</mat-form-field>
