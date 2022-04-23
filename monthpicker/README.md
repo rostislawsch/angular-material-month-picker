@@ -1,6 +1,6 @@
 # Month Picker
 
-This demo shows how to implement a month picker using a Angular Material.
+This demo shows how to implement a month picker using a Angular Material. Read the full story at https://www.beyondjava.net/angular-material-monthpicker.
 
 # Getting it up and running
 

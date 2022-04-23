@@ -7,16 +7,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MonthpickerComponent } from './monthpicker/monthpicker.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MonthpickerComponent,
-    MonthpickerComponent
-  ],
+  declarations: [AppComponent, MonthpickerComponent, MonthpickerComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -26,9 +22,9 @@ import { MonthpickerComponent } from './monthpicker/monthpicker.component';
     MatCardModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
